@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="CSS/Program.css">
+    <script src="Program.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="list-container">
+            <div class="search-tab">
+            <input  class="input" type="text" placeholder="Назва товару">
+            <button class="add" data-tooltip="Додати новий товар">Додати</button>
+             </div>
+                <div class="product-tab">
+                    <div class="prod-name">
+                    <span class="item-name bought">Помідори</span>
+                    </div>
+                    <div class="prod-quantity">
+                    <span class="item-quantity">2</span>
+                    </div>
+                    <div class="prod-buy">
+                    <button class="buy" data-tooltip="Позначити як not куплене"> NOT Куплено</button>
+                    </div>
+                </div>
+                <div class="product-tab">
+                    <div class="prod-name">
+                    <span class="item-name">Печиво</span>
+                    </div>
+                    <div class="prod-quantity">
+                    <button class="quantity-dec" data-tooltip="Зменшити">-</button>
+                    <span class="item-quantity">2</span>
+                    <button class="quantity-inc" data-tooltip="Збільшити">+</button>
+                    </div>
+                    <div class="prod-buy">
+                    <button class="buy" data-tooltip="Позначити як куплене">Куплено</button>
+                    <button class="delete" data-tooltip="Видалити">✖</button>
+                    </div>
+                </div>
+                <div class="product-tab">
+                    <div class="prod-name">
+                    <span class="item-name">Сир</span>
+                    </div>
+                    <div class="prod-quantity">
+                    <button class="quantity-dec" data-tooltip="Зменшити">-</button>
+                    <span class="item-quantity">1</span>
+                    <button class="quantity-inc" data-tooltip="Збільшити">+</button>
+                    </div>
+                    <div class="prod-buy">
+                    <button class="buy" data-tooltip="Позначити як куплене">Куплено</button>
+                    <button class="delete" data-tooltip="Видалити">✖</button>
+                    </div>
+                </div>
+        </div>
+        <div class="summary-container">
+            <div>
+                <div class="title-left">
+                <h3 class="lishilos">Залишилося</h3>
+                </div>
+                <div class="sum-item">
+                    <span class="product-item">
+                        Печиво
+                        <span class="amount">4</span>
+                    </span>
+                    <span class="product-item">
+                        Сир
+                        <span class="amount">4</span>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <div class="title-bought">
+                <h3 class="kuplino">Куплено</h3>
+                </div>
+                <div class="sum-item-bought">
+                    <span class="product-item">
+                        Помідори
+                        <span class="amount">4</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="badge">
+        <div class="list-name"> Buy List</div>
+        <div class="creator">
+            Created by:
+        </div>
+        <div class="name">
+            Nastya
+        </div>
+    </div>
+</body>
+</html>
