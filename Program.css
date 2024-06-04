@@ -1,0 +1,354 @@
+body {
+    font-family:'Trebuchet MS', sans-serif;;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.list-container, .summary-container {
+    background: white;
+    padding: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 30px;
+    max-height: 222px;
+    min-width: 400px;
+}
+
+.summary-container{
+    max-width: 400px;
+    margin-left: 10px;
+    min-width: 240px;
+}
+
+
+.product-tab{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 30px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.prod-name{
+    margin-left: 20px;
+    flex:1;
+}
+
+.prod-quantity{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.prod-buy{
+    margin-right: 20px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.search-tab {
+    display: flex;
+    align-items: center;
+    padding: 11px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 60px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #fff;
+    margin-top: -20px;
+}
+    
+.input {
+    flex: 1;
+    height: 20px;
+    width: 60%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+    
+.add {
+    font-family:'Trebuchet MS', sans-serif;;
+    font-size: 1.2em;
+    position: relative;
+    height: 51px;
+    width: 120px;
+    background-color: #2285d0;
+    color: #fff;
+    border:none;
+    border-bottom: 5px solid #2276b7;;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+    
+
+
+.sum-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    height: 49px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.sum-item-bought{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: line-through;
+    align-items: center;
+    padding: 10px;
+    height: 49px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
+.title-left{
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+    padding: 10px;
+    height: 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.title-bought{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 30px;
+    background-color: #fff;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.lishilos{
+    margin: 15px;
+}
+
+.kuplino{
+    margin: 15px;
+}
+
+
+.item-quantity{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #e8e8e8;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.item-name {
+    flex: 1;
+}
+
+.bought {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.quantity-inc, .quantity-dec {
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-dec{
+    background-color: #db2828;
+    border-bottom: 5px solid #bf2728;
+}
+
+
+.quantity-inc{
+    background-color:#22ba46;
+    border-bottom: 5px solid #21a640;
+}
+
+.buy {
+    font-family:'Trebuchet MS', sans-serif;;
+    padding: 5px;
+    border: none;
+    border-bottom: 5px solid #c6c6c8;
+    cursor: pointer;
+    position: relative;
+    background-color:#f1f1f1;
+    color: rgb(9, 9, 9);
+    border-radius: 5px;
+}
+
+.delete {
+    border-radius: 5px;
+    margin-left: 10px;
+    border: none;
+    background-color: #db2828;
+    border-bottom: 5px solid #bf2728;
+    cursor: pointer;
+    position: relative;
+    color: #fff
+}
+
+
+.product-item {
+	background-color: #e8e8e8;
+    margin: 15px;
+	display: inline-block;
+	height: 25px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.amount {
+	background-color: #f2711d;
+    color: #fff;
+	border-radius: 10px;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	text-align: center;
+}
+
+
+.quantity-inc::after,
+.quantity-dec::after,
+.buy::after,
+.delete::after,
+.add::after {
+    position: absolute;
+    content: attr(data-tooltip);
+    left: 50%;
+    background-color: #6a1b9a;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0; 
+    transform: translate(-50%, -10px) scale(0.8); 
+    transition: opacity 1s, transform 1s;
+}
+
+
+.quantity-inc:hover::after,
+.quantity-dec:hover::after,
+.buy:hover::after,
+.delete:hover::after,
+.add:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -110%) scale(1); 
+}
+
+.badge {
+    position: fixed;
+    bottom: -55px;
+    left: 20px;
+    background-color: #6a1b9a;
+    color: white;
+    padding: 17px;
+    border-radius: 10px 10px 0 0;
+    width: 110px;
+    height: 85px;
+    cursor: pointer;
+    transition: transform 1.5s ease, background-color 1s ease;
+    font-family: "Garamond";
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.creator {
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.name{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.badge:hover {
+    transform: translateY(-55px);
+    background-color: #9c27b0;
+}
+
+
+@media print {
+    .list-name{
+       display: none;
+    }
+
+    .creator{
+        margin-top: 0px;
+    }
+
+    .badge {
+        bottom: -50px;
+        background-color: white;
+        color: #6a1b9a;
+        border: 2px solid #6a1b9a;
+        transition: none;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .list-container .summary-container {
+        width: 100%;
+    }
+
+    .summary-container{
+        margin-left: 30px;
+        min-width: 400px;
+    }
+}
